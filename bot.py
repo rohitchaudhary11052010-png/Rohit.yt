@@ -69,7 +69,7 @@ def escape_markdown(text: str) -> str:
 # MongoDB Connection
 class Database:
     def __init__(self):
-        self.client = MongoClient(mongodb+srv://rohitchaudhary11052010_db_user:a7zwuvVlxosiZ08W@cluster0.xr49sez.mongodb.net/?appName=Cluster0)
+        self.client = MongoClient("mongodb+srv://rohitchaudhary11052010_db_user:a7zwuvVlxosiZ08W@cluster0.xr49sez.mongodb.net/?appName=Cluster0")
         self.db = self.client[DATABASE_NAME]
         self.users = self.db.users
         self.attacks = self.db.attacks
